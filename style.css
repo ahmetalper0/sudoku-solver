@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202020;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    width: 590px;
+    height: 590px;
+    border-radius: 15px;
+    background-color: #181818;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    user-select: none;
+    caret-color: transparent;
+}
+
+.cell:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #4d90fe;
+}
+
+#box-1 .cell,
+#box-3 .cell,
+#box-5 .cell,
+#box-7 .cell,
+#box-9 .cell {
+    background-color: #015F74;
+}
+
+#box-2 .cell,
+#box-4 .cell,
+#box-6 .cell,
+#box-8 .cell {
+    background-color: #008B2F;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.solve-button {
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(90deg, rgba(0,139,47,1) 0%, rgba(1,95,116,1) 100%);
+    color: white;
+    cursor: pointer;
+}
